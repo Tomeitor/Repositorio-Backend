@@ -7,9 +7,17 @@ class ProductManager {
     return this.products;
   }
 
-  addProduct(title, description, price, thumbnail, stock = 5) {
+  addProduct(code, title, description, price, thumbnail, stock = 5) {
+    const codeExists = this.products.some((product) => product.code === code);
+
+    if (codeExists) {
+      console.log(`El codigo ${code} ya esta en uso. Ingrese un codigo unico`);
+      return;
+    }
+
     const newProduct = {
       id: this.products.length + 1,
+      code,
       title,
       description,
       price,
@@ -30,6 +38,7 @@ const productManager = new ProductManager();
 
 console.log(
   productManager.addProduct(
+    "manzana123",
     "manzanas",
     "manzanas ricas y saludables",
     130,
@@ -38,6 +47,7 @@ console.log(
 );
 console.log(
   productManager.addProduct(
+    "pera123",
     "peras",
     "peras verdes y de calidad",
     150,
