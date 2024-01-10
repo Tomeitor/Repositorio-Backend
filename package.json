@@ -1,0 +1,12 @@
+{
+  "name": "repositorio-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-desafio.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

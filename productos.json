@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Este producto ha sido modificado",
+    "description": "peras verdes maduras y ricas",
+    "price": 380,
+    "thumbnail": "imagen del producto",
+    "code": "pera123",
+    "stock": 0
+  }
+]  }
+]
